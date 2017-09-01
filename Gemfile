@@ -6,6 +6,9 @@ git_source(:github) do |repo_name|
 end
 
 
+# ENV
+gem 'dotenv-rails', groups: [:development, :test]
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
 # Use sqlite3 as the database for Active Record
@@ -24,6 +27,9 @@ gem 'puma', '~> 3.7'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
+
+# IGDB
+gem 'rest-client'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
